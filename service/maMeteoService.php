@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Service;
+
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 
@@ -11,7 +12,7 @@ class maMeteoService
         ) {
         }
 
-    public function addMeteo (){
+    public function Meteo (){
         $response = $this->client->request(
             'GET',
             'https://api.openweathermap.org/data/2.5/weather?q={bordeaux}&appid={21286764396e4f0a39815346959382b5}'
